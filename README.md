@@ -62,6 +62,89 @@ The dataset comprises **151,112** records with the following key features:
 - **Hourly and Weekly Trends**: Steady purchasing behavior throughout the day and week, indicating stable consumer activity.
 - **Fraud Prediction**: Current features are insufficient for reliable fraud classification; additional features are needed.
 
+## **Fraud Detection Model Building and Training**
+
+### Task Overview
+The goal of this task is to build and train multiple machine learning models to detect fraudulent transactions in two datasets:
+1. **Credit Card Bank Dataset**
+2. **Fraud Ecommerce Dataset**
+
+This involves data preparation, model selection, training, evaluation, and MLOps implementation for versioning and tracking experiments.
+
+---
+
+### **1. Data Preparation**
+1. **Feature and Target Separation**
+For both datasets:
+- **Credit Card Dataset:** Target column is `Class`
+- **Fraud Dataset:** Target column is `class`
+
+2. **Handling Class Imbalance**
+Class imbalance is significant in both datasets:
+- **Credit Card Dataset:**
+  - Class 0: 284,315 instances
+  - Class 1: 492 instances
+- **Fraud Dataset:**
+  - Class 0: 116,878 instances
+  - Class 1: 12,268 instances
+
+To handle this, **SMOTE (Synthetic Minority Over-sampling Technique)** is applied to balance the classes.
+
+3. **Train-Test Split**
+- **Credit Card Dataset (after SMOTE):**
+  - Training Size: `(227,845, 30)`
+  - Testing Size: `(56,962, 30)`
+- **Fraud Dataset (after SMOTE):**
+  - Training Size: `(103,316, 17)`
+  - Testing Size: `(25,830, 17)`
+
+---
+
+### **2. Model Selection**
+The following models are implemented for performance comparison:
+1. **Random Forest**
+2. **Gradient Boosting**
+3. **Convolutional Neural Network (CNN)**
+4. **Long Short-Term Memory (LSTM)**
+
+---
+
+### **3. Model Training and Evaluation**
+Each model is trained separately for the two datasets, and their performance is evaluated using the following metrics:
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1 Score**
+- **ROC-AUC Score**
+
+### **Best Model Selection**
+| Model                | Accuracy | Precision | Recall  | F1 Score | ROC AUC |
+|---------------------|----------|------------|---------|----------|---------|
+| Random Forest      | 0.9569    | 1.0000     | 0.5378  | 0.6994   | 0.8387  |
+| Gradient Boosting  | 0.9569    | 1.0000     | 0.5378  | 0.6994   | 0.8344  |
+| LSTM               | 0.9569    | 1.0000     | 0.5378  | 0.6994   | 0.8332  |
+| CNN                | 0.9552    | 0.9563     | 0.5448  | 0.6942   | 0.7779  |
+
+🏆 **Selected Best Model:** `Random Forest`
+
+---
+
+### **4. MLOps - Experiment Tracking & Versioning**
+To ensure reproducibility and model version control, **MLflow** is used for tracking:
+
+🔹 **Logging Model Performance**
+- Best parameters recorded for `Random Forest` & `Gradient Boosting`
+- Training time for each model logged
+- Metrics stored in MLflow
+
+🔹 **Model Versioning**
+- Registered `Random Forest`, `Gradient Boosting`, `LSTM`, and `CNN` models in MLflow
+- Best model (`Random Forest`) stored as `random_forest_fraud_best_model.pkl`
+
+🔹 **Experiment Tracking**
+- View experiment runs at: `http://127.0.0.1:5000/`
+
+---
 ### Conclusion
 
 The analysis reveals critical insights into transaction behaviors and fraud patterns, highlighting the need for enhanced security measures and fraud detection strategies, especially in regions with high fraud rates. The results underscore the importance of integrating geolocation data for a comprehensive understanding of fraudulent activities.
