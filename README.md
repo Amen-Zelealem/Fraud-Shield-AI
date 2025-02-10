@@ -164,12 +164,21 @@ The analysis reveals critical insights into transaction behaviors and fraud patt
 +---notebooks
 | ├── init.ipynb
 | ├── analysis_preprocessing.ipynb
+| ├── fraud_detection_pipeline.ipynb
 | └── README.md
++---screenshots
+| ├── cnn_run_model_metrics.png
+| ├── experiments_mlflow.png
+| ├── fraud_detection_experiments.png
+| ├── gradient_boosting_run_model_metrics.png
+| ├── registered_models.png
 +---scripts
 | ├── init.py
 | ├── data_loader.py
+| ├── data_preparation.py
 | ├── feature_engineering.py
 | ├── fraud_data_visualizer.py
+| ├── fraud_detection_pipeline.py
 | ├── fraud_geo_analyzer.py
 | ├── fraud_ip_analysis.py
 | ├── logger.py
