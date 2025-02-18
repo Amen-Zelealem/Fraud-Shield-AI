@@ -1,19 +1,27 @@
 # Use an official Python image (latest stable version for production)
-FROM python:3.11-slim
+FROM python:3.12-slim
 
+# Set environment variables
+ENV PYTHONUNBUFFERED=1 \
+    FLASK_ENV=production \
+    LOG_LEVEL=info
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy application code after dependencies are installed
-COPY . .
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*  # Clean up to reduce image size
+
+# Copy only requirements first to leverage Docker caching
+COPY requirements.txt .
 
 # Install dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Create the logs directory
-RUN mkdir -p logs && chmod 777 logs
-
+# Copy application code after dependencies are installed
+COPY . .
 
 # Expose the API port
 EXPOSE 5000
@@ -23,4 +31,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD curl --fail http://localhost:5000/health || exit 1
 
 # Start the application with Gunicorn (optimized for production)
-CMD ["python","serve_model.py"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "4", "serve_model:application"]
