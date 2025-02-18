@@ -18,3 +18,5 @@ __pycache__
 # Models
 # ========================
 mlruns
+config.bat
+node_modules
