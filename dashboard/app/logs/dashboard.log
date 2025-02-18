@@ -1,0 +1,158 @@
+2025-02-18 19:38:10,611 - INFO - Starting Flask application...
+2025-02-18 19:38:10,636 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-18 19:38:10,636 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-18 19:38:10,637 - INFO -  * Restarting with stat
+2025-02-18 19:38:11,328 - INFO - Starting Flask application...
+2025-02-18 19:38:11,343 - WARNING -  * Debugger is active!
+2025-02-18 19:38:11,348 - INFO -  * Debugger PIN: 133-225-541
+2025-02-18 19:38:39,396 - INFO - 127.0.0.1 - - [18/Feb/2025 19:38:39] "[33mPOST /ajax-api/2.0/mlflow/runs/search HTTP/1.1[0m" 404 -
+2025-02-18 19:38:46,886 - INFO - Accessing /api/fraud_by_location endpoint.
+2025-02-18 19:38:46,886 - INFO - Loading fraud data from CSV...
+2025-02-18 19:38:46,887 - INFO - Accessing /api/fraud_trends endpoint.
+2025-02-18 19:38:46,887 - INFO - Loading fraud data from CSV...
+2025-02-18 19:38:46,889 - INFO - 127.0.0.1 - - [18/Feb/2025 19:38:46] "[33mGET /backend/api/fraud_summary HTTP/1.1[0m" 404 -
+2025-02-18 19:38:46,889 - INFO - Accessing /api/fraud_by_device_browser endpoint.
+2025-02-18 19:38:46,890 - INFO - Loading fraud data from CSV...
+2025-02-18 19:38:47,469 - INFO - Fraud data loaded successfully.
+2025-02-18 19:38:47,497 - INFO - Fraud data loaded successfully.
+2025-02-18 19:38:47,947 - INFO - Fraud data loaded successfully.
+2025-02-18 19:38:47,963 - INFO - Successfully generated fraud by location data.
+2025-02-18 19:38:47,978 - INFO - 127.0.0.1 - - [18/Feb/2025 19:38:47] "GET /api/fraud_by_location HTTP/1.1" 200 -
+2025-02-18 19:38:47,986 - INFO - Successfully generated fraud trends.
+2025-02-18 19:38:47,994 - INFO - 127.0.0.1 - - [18/Feb/2025 19:38:47] "GET /api/fraud_trends HTTP/1.1" 200 -
+2025-02-18 19:38:48,005 - INFO - Successfully generated top fraud cases by device and browser data.
+2025-02-18 19:38:48,016 - INFO - 127.0.0.1 - - [18/Feb/2025 19:38:48] "GET /api/fraud_by_device_browser HTTP/1.1" 200 -
+2025-02-18 19:39:17,862 - INFO -  * Detected change in 'D:\\KAIM\\Fraud-Shield-AI\\dashboard\\app\\dashboard.py', reloading
+2025-02-18 19:39:17,949 - INFO -  * Restarting with stat
+2025-02-18 19:39:18,664 - INFO - Starting Flask application...
+2025-02-18 19:39:18,675 - WARNING -  * Debugger is active!
+2025-02-18 19:39:18,680 - INFO -  * Debugger PIN: 133-225-541
+2025-02-18 19:39:23,813 - INFO -  * Detected change in 'D:\\KAIM\\Fraud-Shield-AI\\dashboard\\app\\dashboard.py', reloading
+2025-02-18 19:39:23,944 - INFO -  * Restarting with stat
+2025-02-18 19:39:24,604 - INFO - Starting Flask application...
+2025-02-18 19:39:24,616 - WARNING -  * Debugger is active!
+2025-02-18 19:39:24,621 - INFO -  * Debugger PIN: 133-225-541
+2025-02-18 19:39:29,763 - INFO - Accessing /api/fraud_summary endpoint.
+2025-02-18 19:39:29,763 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:30,153 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:30,154 - INFO - Accessing /api/fraud_trends endpoint.
+2025-02-18 19:39:30,155 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:30,157 - INFO - Accessing /api/fraud_by_location endpoint.
+2025-02-18 19:39:30,157 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:30,162 - INFO - Successfully generated fraud summary: {'total_transactions': 129146, 'total_fraud_cases': 12268, 'fraud_percentage': 9.499326343827915}
+2025-02-18 19:39:30,171 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:30] "GET /api/fraud_summary HTTP/1.1" 200 -
+2025-02-18 19:39:30,173 - INFO - Accessing /api/fraud_by_device_browser endpoint.
+2025-02-18 19:39:30,174 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:30,772 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:30,821 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:30,821 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:31,239 - INFO - Successfully generated fraud by location data.
+2025-02-18 19:39:31,254 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:31] "GET /api/fraud_by_location HTTP/1.1" 200 -
+2025-02-18 19:39:31,265 - INFO - Successfully generated fraud trends.
+2025-02-18 19:39:31,275 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:31] "GET /api/fraud_trends HTTP/1.1" 200 -
+2025-02-18 19:39:31,278 - INFO - Successfully generated top fraud cases by device and browser data.
+2025-02-18 19:39:31,290 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:31] "GET /api/fraud_by_device_browser HTTP/1.1" 200 -
+2025-02-18 19:39:39,506 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:39] "[33mPOST /ajax-api/2.0/mlflow/runs/search HTTP/1.1[0m" 404 -
+2025-02-18 19:39:39,691 - INFO - Accessing /api/fraud_summary endpoint.
+2025-02-18 19:39:39,691 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:39,695 - INFO - Accessing /api/fraud_trends endpoint.
+2025-02-18 19:39:39,695 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:39,696 - INFO - Accessing /api/fraud_by_location endpoint.
+2025-02-18 19:39:39,698 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:39,699 - INFO - Accessing /api/fraud_by_device_browser endpoint.
+2025-02-18 19:39:39,699 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:39,720 - INFO - Accessing /api/fraud_summary endpoint.
+2025-02-18 19:39:39,720 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:39,724 - INFO - Accessing /api/fraud_trends endpoint.
+2025-02-18 19:39:39,724 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:41,446 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:41,494 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:41,680 - INFO - Successfully generated fraud summary: {'total_transactions': 129146, 'total_fraud_cases': 12268, 'fraud_percentage': 9.499326343827915}
+2025-02-18 19:39:41,686 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:41] "GET /api/fraud_summary HTTP/1.1" 200 -
+2025-02-18 19:39:42,519 - INFO - Accessing /api/fraud_by_location endpoint.
+2025-02-18 19:39:42,537 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:42,537 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:42,540 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:42,591 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:42,683 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:42,699 - INFO - Successfully generated fraud trends.
+2025-02-18 19:39:43,588 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:43] "GET /api/fraud_trends HTTP/1.1" 200 -
+2025-02-18 19:39:43,606 - INFO - Successfully generated fraud summary: {'total_transactions': 129146, 'total_fraud_cases': 12268, 'fraud_percentage': 9.499326343827915}
+2025-02-18 19:39:43,624 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:43] "GET /api/fraud_summary HTTP/1.1" 200 -
+2025-02-18 19:39:43,659 - INFO - Successfully generated fraud by location data.
+2025-02-18 19:39:43,659 - INFO - Accessing /api/fraud_by_device_browser endpoint.
+2025-02-18 19:39:43,672 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:43,672 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:43] "GET /api/fraud_by_location HTTP/1.1" 200 -
+2025-02-18 19:39:43,676 - INFO - Accessing /api/fraud_summary endpoint.
+2025-02-18 19:39:43,679 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:43,689 - INFO - Successfully generated top fraud cases by device and browser data.
+2025-02-18 19:39:43,705 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:43] "GET /api/fraud_by_device_browser HTTP/1.1" 200 -
+2025-02-18 19:39:43,708 - INFO - Successfully generated fraud trends.
+2025-02-18 19:39:43,721 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:43] "GET /api/fraud_trends HTTP/1.1" 200 -
+2025-02-18 19:39:43,877 - INFO - Accessing /api/fraud_trends endpoint.
+2025-02-18 19:39:43,877 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:44,018 - INFO - Accessing /api/fraud_by_location endpoint.
+2025-02-18 19:39:44,061 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:44,096 - INFO - Accessing /api/fraud_by_device_browser endpoint.
+2025-02-18 19:39:44,106 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:44,983 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:44,995 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:45,019 - INFO - Successfully generated fraud summary: {'total_transactions': 129146, 'total_fraud_cases': 12268, 'fraud_percentage': 9.499326343827915}
+2025-02-18 19:39:45,029 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:45] "GET /api/fraud_summary HTTP/1.1" 200 -
+2025-02-18 19:39:45,041 - INFO - Accessing /api/fraud_summary endpoint.
+2025-02-18 19:39:45,041 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:45,075 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:45,092 - INFO - Successfully generated fraud by location data.
+2025-02-18 19:39:45,101 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:45] "GET /api/fraud_by_location HTTP/1.1" 200 -
+2025-02-18 19:39:45,183 - INFO - Accessing /api/fraud_trends endpoint.
+2025-02-18 19:39:45,206 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:45,223 - INFO - Successfully generated top fraud cases by device and browser data.
+2025-02-18 19:39:45,239 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:45] "GET /api/fraud_by_device_browser HTTP/1.1" 200 -
+2025-02-18 19:39:45,359 - INFO - Accessing /api/fraud_by_location endpoint.
+2025-02-18 19:39:45,361 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:45,535 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:46,773 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:46,792 - INFO - Successfully generated fraud trends.
+2025-02-18 19:39:46,803 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:46] "GET /api/fraud_trends HTTP/1.1" 200 -
+2025-02-18 19:39:46,927 - INFO - Accessing /api/fraud_by_device_browser endpoint.
+2025-02-18 19:39:46,929 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:46,932 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:46,947 - INFO - Successfully generated top fraud cases by device and browser data.
+2025-02-18 19:39:46,960 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:46] "GET /api/fraud_by_device_browser HTTP/1.1" 200 -
+2025-02-18 19:39:47,027 - INFO - Successfully generated fraud by location data.
+2025-02-18 19:39:47,037 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:47] "GET /api/fraud_by_location HTTP/1.1" 200 -
+2025-02-18 19:39:47,070 - INFO - Accessing /api/fraud_summary endpoint.
+2025-02-18 19:39:47,071 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:47,126 - INFO - Accessing /api/fraud_trends endpoint.
+2025-02-18 19:39:47,126 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:47,691 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:47,735 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:47,739 - INFO - Successfully generated fraud summary: {'total_transactions': 129146, 'total_fraud_cases': 12268, 'fraud_percentage': 9.499326343827915}
+2025-02-18 19:39:47,806 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:47] "GET /api/fraud_summary HTTP/1.1" 200 -
+2025-02-18 19:39:48,460 - INFO - Accessing /api/fraud_by_location endpoint.
+2025-02-18 19:39:48,460 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:48,589 - INFO - Successfully generated fraud trends.
+2025-02-18 19:39:48,611 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:48] "GET /api/fraud_trends HTTP/1.1" 200 -
+2025-02-18 19:39:48,659 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:48,786 - INFO - Successfully generated fraud by location data.
+2025-02-18 19:39:48,787 - INFO - Accessing /api/fraud_by_device_browser endpoint.
+2025-02-18 19:39:48,799 - INFO - Loading fraud data from CSV...
+2025-02-18 19:39:48,825 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:48] "GET /api/fraud_by_location HTTP/1.1" 200 -
+2025-02-18 19:39:49,188 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:49,342 - INFO - Successfully generated top fraud cases by device and browser data.
+2025-02-18 19:39:49,368 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:49] "GET /api/fraud_by_device_browser HTTP/1.1" 200 -
+2025-02-18 19:39:49,369 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:49,385 - INFO - Successfully generated fraud summary: {'total_transactions': 129146, 'total_fraud_cases': 12268, 'fraud_percentage': 9.499326343827915}
+2025-02-18 19:39:49,396 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:49] "GET /api/fraud_summary HTTP/1.1" 200 -
+2025-02-18 19:39:49,528 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:50,406 - INFO - Successfully generated fraud trends.
+2025-02-18 19:39:50,419 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:50] "GET /api/fraud_trends HTTP/1.1" 200 -
+2025-02-18 19:39:50,684 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:50,716 - INFO - Successfully generated fraud by location data.
+2025-02-18 19:39:50,727 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:50] "GET /api/fraud_by_location HTTP/1.1" 200 -
+2025-02-18 19:39:50,781 - INFO - Fraud data loaded successfully.
+2025-02-18 19:39:50,798 - INFO - Successfully generated top fraud cases by device and browser data.
+2025-02-18 19:39:50,809 - INFO - 127.0.0.1 - - [18/Feb/2025 19:39:50] "GET /api/fraud_by_device_browser HTTP/1.1" 200 -
+2025-02-18 19:40:39,387 - INFO - 127.0.0.1 - - [18/Feb/2025 19:40:39] "[33mPOST /ajax-api/2.0/mlflow/runs/search HTTP/1.1[0m" 404 -
+2025-02-18 19:41:39,425 - INFO - 127.0.0.1 - - [18/Feb/2025 19:41:39] "[33mPOST /ajax-api/2.0/mlflow/runs/search HTTP/1.1[0m" 404 -
