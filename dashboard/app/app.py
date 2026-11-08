@@ -1,3 +1,4 @@
+import utils.session
 from flask import Flask, jsonify
 import pandas as pd
 import os
